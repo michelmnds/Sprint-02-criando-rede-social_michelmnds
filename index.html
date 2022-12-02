@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./src/styles/global.css">
+        <link rel="stylesheet" href="./src/styles/index.css">
+        <link rel="stylesheet" href="./src/styles/reset.css">
+        <link rel="stylesheet" href="./src/styles/style.css">
+        
+        <style>@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');</style>
+
+        <script src="./src/scripts/index.js" defer></script>
+        <script src="./src/scripts/posts.js" defer></script>
+
+        <title>TechPosters</title>
+    </head>
+    
+    <body>
+        <header class="header">
+            <span class="headerLogo">TechPosters</span>
+
+            <div class="btnContainer">
+                <a class="btnSair" href="./src/pages/login-cadastro.html">Sair</a>
+            </div>
+        </header>
+
+        <main class="main">
+            <!--Modal-->
+            <div class="modalUmContainer hidden">
+                <div class="modalUm">
+                    <div class="perfilModal">
+                        <div class="modalHeader">
+                            <div class="esqContainer">
+                                <img class="perfilImage" src="./src/assets/img/user4.svg" alt="perfil_image">
+            
+                                <div class="infosContainer">
+                                    <span class="infoNome">Carla Maria</span>
+                
+                                    <span class="infoProfissao">Back end Engineer</span>
+                                </div>
+                            </div>
+
+                            <span class="modalCloseUm">X</span>
+                        </div>
+                    </div>
+
+                    <div class="modalConteudo">
+                        <span class="modalTitle">Empresa de Tecnologia da Informação abre vagas para programa de estágio</span>
+
+                        <span class="modalDesc">A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto.</span>
+
+                        <span class="modalDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla minima vel recusandae. Ad perspiciatis ut, placeat facere qui nihil cum nostrum, laudantium temporibus illum aliquam beatae optio officia minima!</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modalDoisContainer hidden">
+                <div class="modalDois">
+                    <div class="perfilModal">
+                        <div class="modalHeader">
+                            <div class="esqContainer">
+                                <img class="perfilImage" src="./src/assets/img/user5.svg" alt="perfil_image">
+            
+                                <div class="infosContainer">
+                                    <span class="infoNome">Júlia Martins</span>
+                
+                                    <span class="infoProfissao">Devop's</span>
+                                </div>
+                            </div>
+
+                            <span class="modalCloseDois">X</span>
+                        </div>
+                    </div>
+
+                    <div class="modalConteudo">
+                        <span class="modalTitle">Como melhorar sua lógica de programação? Desenvolvemos 5 passos para te ajudar</span>
+
+                        <span class="modalDesc">Para quem está começando na área de T.I, em pleno século 21 este conceito pode parecer um grande desafio, pois requer muitas habilidades em diversas áreas de estudo, principalmente...</span>
+
+                        <span class="modalDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla minima vel recusandae. Ad perspiciatis ut, placeat facere qui nihil cum nostrum, laudantium temporibus illum aliquam beatae optio officia minima!</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modalTresContainer hidden">
+                <div class="modalTres">
+                    <div class="perfilModal">
+                        <div class="modalHeader">
+                            <div class="esqContainer">
+                                <img class="perfilImage" src="./src/assets/img/user7.svg" alt="perfil_image">
+            
+                                <div class="infosContainer">
+                                    <span class="infoNome">Filipe Gutierry</span>
+                
+                                    <span class="infoProfissao">Back end Engineer</span>
+                                </div>
+                            </div>
+
+                            <span class="modalCloseTres">X</span>
+                        </div>
+                    </div>
+
+                    <div class="modalConteudo">
+                        <span class="modalTitle">NextJS como essa ferramenta revolucionou a maneira de desenvolver sites</span>
+
+                        <span class="modalDesc">Provavelmente, você já ouviu falar do Next.js, considerado o framework mais popular do mercado. Com a expansão do mercado de tecnologia e sua influência em serviços de diver...</span>
+
+                        <span class="modalDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla minima vel recusandae. Ad perspiciatis ut, placeat facere qui nihil cum nostrum, laudantium temporibus illum aliquam beatae optio officia minima!</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Perfil-->
+            
+            <div class="perfil">
+                <img class="perfilImage" src="./src/assets/img/user1.svg" alt="perfil_image">
+            
+
+                <div class="infosContainer">
+                    <span class="infoNome">Samuel Leão</span>
+
+                    <span class="infoProfissao">Front end Engineer</span>
+                </div>
+            </div>
+
+            <div class="containerPost">
+                <div class="inputsPost">
+                    <input class="tituloPost" placeholder="Digitar título do post" type="name">
+
+                    <input class="descPost" placeholder="Digitar descrição do post" type="text">
+                </div>
+                
+                <div class="btnPostContainer">
+                    <button class="btnPost">Postar</button>
+                </div>
+            </div>
+
+            <aside class="containerSugestoes">
+                <span class="sugestoesTxt">Sugestões para você seguir</span>
+
+                <div class="sugestoesPerfis">
+                    
+                </div>
+            </aside>
+
+            <section class="containerUsersPosts">
+                <span class="postsTxt">Posts</span>
+
+                <div class="usersPosts">
+                    <section class="postUm">
+                        <div class="perfilPostContainer">
+                            <img src="./src/assets/img/user4.svg" alt="user4Img" class="perfilImage">
+
+                            <div class="infosPerfilContainer">
+                                <span class="infoNome">Carla Maria</span>
+
+                                <span class="infoProfissao">Back end Engineer</span>
+                            </div>
+                        </div>
+
+                        <div class="conteudoPost">
+                            <span class="titlePost">Empresa de Tecnologia da Informação abre vagas para programa de estágio</span>
+
+                            <span class="descPostUser">A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto.</span>
+
+                            <div class="bottomContainer">
+                                <button class="bottomBtnUm">Abrir Post</button>
+
+                                <div class="containerLike">
+                                    <img class="likeImgVermelhoUm" src="./src/assets/img/VectorlikeVermelho.png" alt="likeRed">
+                                    
+                                    <img class="likeImgUm" src="./src/assets/img/Vectorlike.png" alt="like">
+
+                                    <span class="likeCounterUm">20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="postDois">
+                        <div class="perfilPostContainer">
+                            <img src="./src/assets/img/user5.svg" alt="user5Img" class="perfilImage">
+
+                            <div class="infosPerfilContainer">
+                                <span class="infoNome">Júlia Martins</span>
+
+                                <span class="infoProfissao">Devop's</span>
+                            </div>
+                        </div>
+
+                        <div class="conteudoPost">
+                            <span class="titlePost">Como melhorar sua lógica de programação? Desenvolvemos 5 passos para te ajudar</span>
+
+                            <span class="descPostUser">Para quem está começando na área de T.I, em pleno século 21 este conceito pode parecer um grande desafio, pois requer muitas habilidades em diversas áreas de estudo, principalmente...</span>
+
+                            <div class="bottomContainer">
+                                <button class="bottomBtnDois">Abrir Post</button>
+
+                                <div class="containerLike">
+                                    <img class="likeImgVermelhoTres" src="./src/assets/img/VectorlikeVermelho.png" alt="likeRed">
+                                    
+                                    <img class="likeImgTres" src="./src/assets/img/Vectorlike.png" alt="like">
+
+                                    <span class="likeCounterTres">20</span>
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </section>
+
+                    <section class="postTres">
+                        <div class="perfilPostContainer">
+                            <img src="./src/assets/img/user7.svg" alt="user7Img" class="perfilImage">
+
+                            <div class="infosPerfilContainer">
+                                <span class="infoNome">Filipe Gutierry</span>
+
+                                <span class="infoProfissao">Back end Engineer</span>
+                            </div>
+                        </div>
+
+                        <div class="conteudoPost">
+                            <span class="titlePost">NextJS como essa ferramenta revolucionou a maneira de desenvolver sites</span>
+
+                            <span class="descPostUser">Provavelmente, você já ouviu falar do Next.js, considerado o framework mais popular do mercado. Com a expansão do mercado de tecnologia e sua influência em serviços de diver...</span>
+
+                            <div class="bottomContainer">
+                                <button class="bottomBtnTres">Abrir Post</button>
+
+                                <div class="containerLike">
+                                    <img class="likeImgVermelhoDois" src="./src/assets/img/VectorlikeVermelho.png" alt="likeRed">
+                                    
+                                    <img class="likeImgDois" src="./src/assets/img/Vectorlike.png" alt="like">
+
+                                    <span class="likeCounterDois">20</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

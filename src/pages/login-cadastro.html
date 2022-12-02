@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="../styles/login-cadastro.css">
+        <link rel="stylesheet" href="../styles/reset.css">
+        
+        <style>@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');</style>
+
+        <script src="../scripts/login-cadastro.js" defer></script>
+
+        <title>TechPosters</title>
+    </head>
+    
+    <body>
+        <section class="modalLogin hidden">
+            <div class="modalContainer">
+                <h2 class="modalTxt">Acesso não autorizado</h2>
+
+                <span class="modalSpan">Essa conta não existe, logo não pode acessar a <br> página dos posts</span>
+
+                <div class="containerModalBtn">
+                    <button class="modalBtn">Entendi</button>
+                </div>
+            </div>
+        </section>
+        
+        <div class="container">
+            <header class="header">
+                <span class="headerLogo">TechPosters</span>
+
+                <div class="btnContainer">
+                    <button class="btnLogin">Login</button>
+                    <button class="btnRegistro">Registro</button>
+             </div>
+            </header>
+
+            <main class="main">
+                <h1 class="mainTxt">Login</h1>
+            
+                <div class="inputsContainer">
+                    <input class="input" type="email" placeholder="Seu e-mail">
+                    
+                    <input class="input" type="password" placeholder="Sua senha">
+
+                    <button class="inputBtnLogin" type="submit">Logar</button>
+                   
+                    <span class="inputTxt">Ainda não possui cadastro?</span>
+
+                    <button class="registroBtn">Ir para página de registro</button>
+                </div>
+            </main>
+
+            <section class="mainRegistro hidden">
+                <h1 class="mainTxt">Cadastro</h1>
+
+                <div class="inputsContainer">
+                    <input class="input" type="name" placeholder="Seu e-mail">
+
+                    <input class="input" type="email" placeholder="Seu nome">
+                    
+                    <input class="input" type="password" placeholder="Sua senha">
+
+                    <input class="input" type="name" placeholder="Qual o seu trabalho?">
+
+                    <input class="input" type="url" placeholder="URL da imagem de perfil">
+
+                    <a href="\index.html" class="inputBtnRegistro" type="submit">Registrar</a>
+
+                    <span class="inputTxt">Já possui login?</span>
+
+                    <button class="loginBtn">Ir para página de login</button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
